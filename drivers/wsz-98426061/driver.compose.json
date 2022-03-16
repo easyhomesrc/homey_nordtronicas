@@ -1,0 +1,49 @@
+{
+  "name": {
+    "en": "WSZ 98426061"
+  },
+  "class": "remote",
+  "capabilities": [
+    "measure_battery"
+  ],
+  "energy": {
+    "batteries": [
+      "CR2430"
+    ]
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.jpg",
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.jpg"
+  },
+  "zigbee": {
+    "manufacturerName": "Nordtronic A/S",
+    "productId": [
+      "WSZ 98426061"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          1
+        ],
+        "bindings": [
+          6,
+          8,
+          768
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press and hold down the A button until the LED indicator turns on. Release button immediately and press the B button.\n\nIf pairing does not start after 20 seconds, reset the device. Press the A button until the LED Indicator turn on. Release the button and immediately press the A button 5 times."
+      }
+    }
+  }
+}

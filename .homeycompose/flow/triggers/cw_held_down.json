@@ -1,0 +1,18 @@
+{
+  "title": {
+    "en": "CW is held down"
+  },
+  "titleFormatted": {
+    "en": "CW is held down"
+  },
+  "hint": {
+    "en": "Press and hold down the CW button."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wsz-98426061"
+    }
+  ]
+}

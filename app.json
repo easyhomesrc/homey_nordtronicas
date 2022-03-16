@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
+  "brandColor": "#154577",
   "platforms": [
     "local"
   ],
@@ -18,12 +19,416 @@
   ],
   "permissions": [],
   "images": {
-    "small": "/assets/images/small.png",
-    "large": "/assets/images/large.png",
-    "xlarge": "/assets/images/xlarge.png"
+    "small": "/assets/images/small.jpg",
+    "large": "/assets/images/large.jpg",
+    "xlarge": "/assets/images/xlarge.jpg"
   },
   "author": {
     "name": "Wang Wendong",
     "email": "sunricher_src@163.com"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/easyhomesrc/homey_nordtronicas/issues"
+  },
+  "source": "https://github.com/easyhomesrc/homey_nordtronicas",
+  "homepage": "https://nordtronic.com",
+  "support": "https://nordtronic.com/shop/contact-57c1.html",
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "Brightness is held down"
+        },
+        "titleFormatted": {
+          "en": "Brightness [[mode]] is held down"
+        },
+        "hint": {
+          "en": "Press and hold down the brightness button."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wsz-98426061"
+          },
+          {
+            "name": "mode",
+            "title": {
+              "en": "Mode"
+            },
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "up",
+                "label": {
+                  "en": "up"
+                }
+              },
+              {
+                "id": "down",
+                "label": {
+                  "en": "down"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "brightness_held_down"
+      },
+      {
+        "title": {
+          "en": "Brightness is pressed"
+        },
+        "titleFormatted": {
+          "en": "Brightness [[mode]] is pressed"
+        },
+        "hint": {
+          "en": "Short press the brightness button."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wsz-98426061"
+          },
+          {
+            "name": "mode",
+            "title": {
+              "en": "Mode"
+            },
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "up",
+                "label": {
+                  "en": "up"
+                }
+              },
+              {
+                "id": "down",
+                "label": {
+                  "en": "down"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "brightness_pressed"
+      },
+      {
+        "title": {
+          "en": "Brightness is released"
+        },
+        "titleFormatted": {
+          "en": "Brightness is released"
+        },
+        "hint": {
+          "en": "Release the brightness button."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wsz-98426061"
+          }
+        ],
+        "id": "brightness_released"
+      },
+      {
+        "title": {
+          "en": "CW is held down"
+        },
+        "titleFormatted": {
+          "en": "CW is held down"
+        },
+        "hint": {
+          "en": "Press and hold down the CW button."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wsz-98426061"
+          }
+        ],
+        "id": "cw_held_down"
+      },
+      {
+        "title": {
+          "en": "CW is pressed"
+        },
+        "titleFormatted": {
+          "en": "CW is pressed"
+        },
+        "hint": {
+          "en": "Short press the CW button."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wsz-98426061"
+          }
+        ],
+        "id": "cw_pressed"
+      },
+      {
+        "title": {
+          "en": "CW is released"
+        },
+        "titleFormatted": {
+          "en": "CW is released"
+        },
+        "hint": {
+          "en": "Release the CW button."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wsz-98426061"
+          }
+        ],
+        "id": "cw_released"
+      },
+      {
+        "title": {
+          "en": "RGB is held down"
+        },
+        "titleFormatted": {
+          "en": "RGB is held down"
+        },
+        "hint": {
+          "en": "Press and hold down the RGB button."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wsz-98426061"
+          }
+        ],
+        "id": "rgb_held_down"
+      },
+      {
+        "title": {
+          "en": "RGB is pressed"
+        },
+        "titleFormatted": {
+          "en": "RGB is pressed"
+        },
+        "hint": {
+          "en": "Short press the RGB button."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wsz-98426061"
+          }
+        ],
+        "id": "rgb_pressed"
+      },
+      {
+        "title": {
+          "en": "RGB is released"
+        },
+        "titleFormatted": {
+          "en": "RGB is released"
+        },
+        "hint": {
+          "en": "Release the RGB button."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wsz-98426061"
+          }
+        ],
+        "id": "rgb_released"
+      },
+      {
+        "title": {
+          "en": "Switch is pressed"
+        },
+        "titleFormatted": {
+          "en": "Switch is [[mode]]"
+        },
+        "hint": {
+          "en": "Short press the switch button."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wsz-98426061"
+          },
+          {
+            "name": "mode",
+            "title": {
+              "en": "Mode"
+            },
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "on",
+                "label": {
+                  "en": "turned on"
+                }
+              },
+              {
+                "id": "off",
+                "label": {
+                  "en": "turned off"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "switch_pressed"
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "BoxDIMZ 98425031"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "small": "/drivers/boxdimz-98425031/assets/images/small.jpg",
+        "large": "/drivers/boxdimz-98425031/assets/images/large.jpg",
+        "xlarge": "/drivers/boxdimz-98425031/assets/images/xlarge.jpg"
+      },
+      "zigbee": {
+        "manufacturerName": "Nordtronic A/S",
+        "productId": [
+          "BoxDIMZ 98425031"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              6,
+              8
+            ],
+            "bindings": [
+              6,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/boxdimz-98425031/assets/learnmode.svg",
+          "instruction": {
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode."
+          }
+        }
+      },
+      "id": "boxdimz-98425031"
+    },
+    {
+      "name": {
+        "en": "BoxRelayZ 98423051"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "small": "/drivers/boxrelayz-98423051/assets/images/small.jpg",
+        "large": "/drivers/boxrelayz-98423051/assets/images/large.jpg",
+        "xlarge": "/drivers/boxrelayz-98423051/assets/images/xlarge.jpg"
+      },
+      "zigbee": {
+        "manufacturerName": "Nordtronic A/S",
+        "productId": [
+          "BoxRelayZ 98423051"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              6
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/boxrelayz-98423051/assets/learnmode.svg",
+          "instruction": {
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode."
+          }
+        }
+      },
+      "id": "boxrelayz-98423051"
+    },
+    {
+      "name": {
+        "en": "WSZ 98426061"
+      },
+      "class": "remote",
+      "capabilities": [
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2430"
+        ]
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "small": "/drivers/wsz-98426061/assets/images/small.jpg",
+        "large": "/drivers/wsz-98426061/assets/images/large.jpg",
+        "xlarge": "/drivers/wsz-98426061/assets/images/xlarge.jpg"
+      },
+      "zigbee": {
+        "manufacturerName": "Nordtronic A/S",
+        "productId": [
+          "WSZ 98426061"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              1
+            ],
+            "bindings": [
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/wsz-98426061/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold down the A button until the LED indicator turns on. Release button immediately and press the B button.\n\nIf pairing does not start after 20 seconds, reset the device. Press the A button until the LED Indicator turn on. Release the button and immediately press the A button 5 times."
+          }
+        }
+      },
+      "id": "wsz-98426061"
+    }
+  ]
 }

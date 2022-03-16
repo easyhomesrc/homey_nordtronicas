@@ -1,0 +1,18 @@
+{
+  "title": {
+    "en": "RGB is released"
+  },
+  "titleFormatted": {
+    "en": "RGB is released"
+  },
+  "hint": {
+    "en": "Release the RGB button."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wsz-98426061"
+    }
+  ]
+}

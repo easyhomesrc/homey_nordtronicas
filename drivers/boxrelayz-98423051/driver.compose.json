@@ -1,0 +1,42 @@
+{
+  "name": {
+    "en": "BoxRelayZ 98423051"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.jpg",
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.jpg"
+  },
+  "zigbee": {
+    "manufacturerName": "Nordtronic A/S",
+    "productId": [
+      "BoxRelayZ 98423051"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          6
+        ],
+        "bindings": [
+          6
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode."
+      }
+    }
+  }
+}

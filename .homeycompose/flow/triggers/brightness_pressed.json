@@ -1,0 +1,39 @@
+{
+  "title": {
+    "en": "Brightness is pressed"
+  },
+  "titleFormatted": {
+    "en": "Brightness [[mode]] is pressed"
+  },
+  "hint": {
+    "en": "Short press the brightness button."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wsz-98426061"
+    },
+    {
+      "name": "mode",
+      "title": {
+        "en": "Mode"
+      },
+      "type": "dropdown",
+      "values": [
+        {
+          "id": "up",
+          "label": {
+            "en": "up"
+          }
+        },
+        {
+          "id": "down",
+          "label": {
+            "en": "down"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title": {
+    "en": "Brightness is held down"
+  },
+  "titleFormatted": {
+    "en": "Brightness [[mode]] is held down"
+  },
+  "hint": {
+    "en": "Press and hold down the brightness button."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wsz-98426061"
+    },
+    {
+      "name": "mode",
+      "title": {
+        "en": "Mode"
+      },
+      "type": "dropdown",
+      "values": [
+        {
+          "id": "up",
+          "label": {
+            "en": "up"
+          }
+        },
+        {
+          "id": "down",
+          "label": {
+            "en": "down"
+          }
+        }
+      ]
+    }
+  ]
+}

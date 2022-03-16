@@ -1,3 +1,3 @@
 # Nordtronic A/S
 
-Transform standard lights to smart lights.
+Integrate Nordtronic`s Smart products with ease to make your standard lighting smart.
