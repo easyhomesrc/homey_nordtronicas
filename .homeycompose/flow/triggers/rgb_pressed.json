@@ -8,6 +8,7 @@
   "hint": {
     "en": "Short press the RGB button."
   },
+  "platforms": ["local", "cloud"],
   "args": [
     {
       "type": "device",

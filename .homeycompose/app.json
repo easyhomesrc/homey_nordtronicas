@@ -1,11 +1,12 @@
 {
   "id": "com.nordtronic.nordtronicas",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#154577",
   "platforms": [
-    "local"
+    "local",
+    "cloud"
   ],
   "name": {
     "en": "Nordtronic A/S"

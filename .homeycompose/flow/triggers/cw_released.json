@@ -8,6 +8,7 @@
   "hint": {
     "en": "Release the CW button."
   },
+  "platforms": ["local", "cloud"],
   "args": [
     {
       "type": "device",

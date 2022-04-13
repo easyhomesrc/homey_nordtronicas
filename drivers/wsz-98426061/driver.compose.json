@@ -12,7 +12,7 @@
     ]
   },
   "platforms": [
-    "local"
+    "local", "cloud"
   ],
   "connectivity": [
     "zigbee"

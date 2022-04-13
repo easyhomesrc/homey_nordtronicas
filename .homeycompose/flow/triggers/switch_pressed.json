@@ -8,6 +8,7 @@
   "hint": {
     "en": "Short press the switch button."
   },
+  "platforms": ["local", "cloud"],
   "args": [
     {
       "type": "device",

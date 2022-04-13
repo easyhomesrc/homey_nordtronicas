@@ -8,6 +8,7 @@
   "hint": {
     "en": "Press and hold down the brightness button."
   },
+  "platforms": ["local", "cloud"],
   "args": [
     {
       "type": "device",
